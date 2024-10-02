@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зворотний зв'язок</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Підключення CSS -->
+    <style>
+        /* Основні стилі для сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Стилі для заголовка і меню */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-btn {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Контейнер для форми і фото */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        /* Стилі для фото */
+        .photo-left, .photo-right {
+            width: 100px; /* Зробимо фото не надто великими */
+            height: auto;
+            border-radius: 10px;
+            margin: 0 50px; /* Збільшений відступ між фото і формою */
+        }
+
+        /* Стилі для форми */
+        .contact-form-container {
+            flex-grow: 1;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contact-form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            background-color: white;
+            padding: 0 5px;
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Контейнер для кнопок -->
+    <header>
+        <nav class="button-container">
+            <a href="svorot.html" class="nav-btn">Навички</a>
+            <li>
+                <div id="top-menu">
+                    <div class="top-menu-btn">
+                        Лабораторні
+                        <div class="top-submenu">
+                            <a href="info.html">
+                                <div class="top-submenu-btn">Лабораторна #1</div>
+                            </a>
+                            <a href="lab2.html">
+                                <div class="top-submenu-btn">Лабораторна #2</div>
+                            </a>
+                            <a href="../lab3/lab3.html">
+                                <div class="top-submenu-btn">Лабораторна #3</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Контейнер для форми і фото -->
+    <div class="content-wrapper">
+        <!-- Ліва фотографія -->
+        <img src="5348140457651200305.jpg" alt="Фото ліворуч" class="photo-left">
+
+        <!-- Контейнер для форми -->
+        <div class="contact-form-container">
+            <h2>Зворотний зв'язок</h2>
+            <form action="mailto:ваш@емейл.com" method="POST" enctype="text/plain">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Ваше ім'я</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Ваш email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Ваше повідомлення</label>
+                </div>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+
+        <!-- Права фотографія -->
+        <img src="5409078999835073948.jpg" alt="Фото праворуч" class="photo-right">
+    </div>
+
+</body>
+</html>
+
+
+
+

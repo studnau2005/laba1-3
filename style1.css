@@ -1,0 +1,229 @@
+/* Стиль для основної навігації */
+.creative-nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.creative-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.creative-nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.creative-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.creative-nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Випадаюче меню Лабораторних */
+#top-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.top-menu-btn {
+  color: #fff;
+  padding: 10px;
+  background-color: #444;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.top-menu-btn:hover {
+  background-color: #555;
+}
+
+.top-submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #444;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.top-submenu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+}
+
+.top-submenu-btn:hover {
+  background-color: rgba(255, 33, 33, 0.6);
+}
+
+.top-menu-btn:hover .top-submenu {
+  display: block;
+}
+
+.top-submenu-btn {
+  padding: 10px;
+  font-size: 16px;
+  color: #292a3b;
+  transition: background-color 0.3s;
+}
+
+.top-submenu-btn:hover {
+  background-color: #201818;
+  color: #fff;
+}
+
+body {
+    background: linear-gradient(to right, #a3604f, #d69665); /* Градієнт з помаранчевого до жовтого */
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Кнопки зверху */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #222;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #007bff;
+}
+
+/* Форма зворотного зв'язку */
+.contact-form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #007bff;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
