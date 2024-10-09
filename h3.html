@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2.3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            box-sizing: border-box; 
+            position: relative;
+        }
+        .box1 {
+            background-color: #174dff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 2; 
+        }
+        .box2 {
+            background-color: #e5ff00;
+            order: 3; 
+        }
+        .box3 {
+            background-color: #f74141;
+            order: 1;
+        }
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box3"></div>
+        <div class="box box2"></div>
+        <div class="box box1"><h3>I'm Dmitro Kubrak.</h3><br>I love NAU.</div>
+    </div>
+</body>
+</html>

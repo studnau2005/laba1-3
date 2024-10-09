@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>task 2.5</title>
+</head>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    background-color: #faf60a;
+    border-left: 10px dashed #01c8fa;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 24px;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box:hover {
+    background-color: rgb(0, 234, 255);
+    color: rgb(32, 97, 218);
+    cursor: pointer;
+}
+
+.container {
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.box6 {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+    </style>
+<body>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+    </div>
+    <div class="box box6">F</div>
+</body>
+</html>

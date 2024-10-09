@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2.1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;  
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            position: relative; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .box1 {
+            background-color: #3245f0;
+            text-align: center;
+        }
+
+        .box2 {
+            background-color: #e5ff00;
+            text-align: center;
+        }
+
+        .box3 {
+            background-color: #ff8282;
+            text-align: center;
+        }
+
+        /* Загальний стиль для номера клітинки */
+        .number {
+            font-size: 12px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        /* Стиль для тексту всередині першої клітинки */
+        .box1 h3 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .box1 p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <span class="number">#1</span>
+        <h3>I'm Dmytro Kubrak.</h3>
+        <p>I love NAU.</p>
+    </div>
+    <div class="box box2">
+        <span class="number">#2</span>
+    </div>
+    <div class="box box3">
+        <span class="number">#3</span>
+    </div>
+</body>
+</html>
