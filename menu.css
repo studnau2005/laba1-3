@@ -1,0 +1,105 @@
+/* Основний стиль для контейнера навігації */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a; /* Чорний фон */
+    padding: 10px 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Проміжок між кнопками */
+  }
+  
+  /* Стиль для кнопок */
+  .nav-btn {
+    padding: 10px 20px;
+    background-color: transparent; /* Прозорий фон для кнопок */
+    color: white; /* Білий текст */
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Легка заливка при наведенні */
+    color: #ff6f61; /* Колір тексту при наведенні */
+  }
+  
+  /* Випадаюче меню Лабораторних */
+#top-menu {
+    position: relative;
+    display: inline-block;
+    }
+    
+    .top-menu-btn {
+    color: #fff;
+    padding: 10px;
+    background-color: #444;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Verdana', sans-serif; /* Змінили шрифт на Verdana */
+    }
+    
+    .top-menu-btn:hover {
+    background-color: #555;
+    }
+    
+    .top-submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #444;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 100;
+    }
+    
+    .top-submenu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    font-family: 'Courier New', monospace; /* Змінили шрифт для випадаючих пунктів меню */
+    }
+    
+    .top-submenu-btn:hover {
+    background-color: rgba(255, 33, 33, 0.6);
+    }
+    
+    .top-menu-btn:hover .top-submenu {
+    display: block;
+    }
+    
+    .top-submenu-btn {
+    padding: 10px;
+    font-size: 16px;
+    color: #292a3b;
+    transition: background-color 0.3s;
+    }
+    
+    .top-submenu-btn:hover {
+    background-color: #201818;
+    color: #fff;
+    }
+  
+  body {
+    background: linear-gradient(to right, #a3604f, #d69665); /* Градієнт з помаранчевого до жовтого */
+    font-family: 'Arial', sans-serif; /* Загальний шрифт для сторінки */
+  }
+  
+  
+  /* Центрування зображення */
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

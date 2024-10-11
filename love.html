@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №6</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #a3604f, #d69665); /* Градієнт */
+            font-family: 'Arial', sans-serif; /* Загальний шрифт */
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .tabs {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff6347;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="number"], input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .result {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ffeb3b;
+        }
+
+        .dice img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Лабораторна робота №6</h1>
+
+    <div class="tabs">
+        <button onclick="showTab('loveCalculator')">Love Calculator</button>
+        <button onclick="showTab('bmiCalculator')">BMI Calculator</button>
+        <button onclick="showTab('leapYear')">Leap Year</button>
+        <button onclick="showTab('coffeeBuyer')">Who's buying Coffee?</button>
+        <button onclick="showTab('sequence')">Послідовність</button>
+        <button onclick="showTab('beerSong')">99 bottles of beer</button>
+        <button onclick="showTab('fibonacci')">Послідовність Фібоначчі</button>
+        <button onclick="showTab('diceGame')">Гра у кості</button>
+    </div>
+
+    <!-- Love Calculator -->
+    <div id="loveCalculator" class="tab-content active">
+        <h2>Love Calculator</h2>
+        <button onclick="loveCalculator()">Вирахувати сумісність</button>
+        <p class="result" id="loveResult"></p>
+    </div>
+
+    <!-- BMI Calculator -->
+    <div id="bmiCalculator" class="tab-content">
+        <h2>BMI Calculator</h2>
+        <input type="number" id="weight" placeholder="Вага (кг)">
+        <input type="number" id="height" placeholder="Зріст (м)">
+        <button onclick="calculateBMI()">Розрахувати BMI</button>
+        <p class="result" id="bmiResult"></p>
+    </div>
+
+    <!-- Leap Year -->
+    <div id="leapYear" class="tab-content">
+        <h2>Leap Year</h2>
+        <input type="number" id="year" placeholder="Введіть рік">
+        <button onclick="isLeapYear()">Перевірити рік</button>
+        <p class="result" id="leapResult"></p>
+    </div>
+
+    <!-- Who's buying Coffee? -->
+    <div id="coffeeBuyer" class="tab-content">
+        <h2>Who's buying Coffee?</h2>
+        <button onclick="whosBuyingCoffee()">Хто купує каву?</button>
+        <p class="result" id="coffeeResult"></p>
+    </div>
+
+    <!-- Sequence -->
+    <div id="sequence" class="tab-content">
+        <h2>Послідовність</h2>
+        <button onclick="printSequence()">Вивести послідовність</button>
+        <p class="result" id="sequenceResult"></p>
+    </div>
+
+    <!-- 99 bottles of beer -->
+    <div id="beerSong" class="tab-content">
+        <h2>99 bottles of beer</h2>
+        <button onclick="bottlesOfBeer()">Вивести пісню</button>
+        <p class="result" id="beerResult"></p>
+    </div>
+
+    <!-- Fibonacci Sequence -->
+    <div id="fibonacci" class="tab-content">
+        <h2>Послідовність Фібоначчі</h2>
+        <input type="number" id="fibNumber" placeholder="Кількість елементів">
+        <button onclick="fibonacci()">Вивести послідовність</button>
+        <p class="result" id="fibResult"></p>
+    </div>
+
+    <!-- Гра у кості -->
+    <div id="diceGame" class="tab-content">
+        <h2>Гра у кості</h2>
+        <div class="dice">
+            <p>Player 1</p>
+            <img id="dice1" src="images/dice6.png" alt="Dice 1">
+        </div>
+        <div class="dice">
+            <p>Player 2</p>
+            <img id="dice2" src="images/dice6.png" alt="Dice 2">
+        </div>
+        <div class="result" id="diceResult">Кинути кості для результату!</div>
+        <button onclick="rollDice()">Кинути кості</button>
+    </div>
+</div>
+
+<script src="love.js"></script>
+</body>
+</html>

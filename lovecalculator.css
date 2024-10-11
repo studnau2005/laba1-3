@@ -1,0 +1,30 @@
+/* Основні стилі для сторінки */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.task {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #4CAF50;
+}
+
+/* Стилі для
