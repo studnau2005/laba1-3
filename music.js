@@ -37,7 +37,7 @@ function handleInstrumentClick(instrumentId) {
 
 // Функція відтворення звуку
 function playSound(instrument, callback) {
-    const audio = new Audio(`sounds/${instrument}.mp3`);
+    const audio = new Audio(`${instrument}.mp3`); // Використовуємо відносний шлях до звуку
     audio.play();
     
     // Викликаємо callback після відтворення звуку
